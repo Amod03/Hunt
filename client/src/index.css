@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#home {
+	background: url('https://img5.goodfon.com/wallpaper/nbig/e/99/gory-mountains-nochnye-gory-rassvet-solntse-sun-rozovoe-soln.jpg');
+	background-size: cover;
+	background-position: top center;
+}
+
+.outerdiv{
+  background: linear-gradient(180deg,rgb(28, 36, 47),rgb(79, 97, 121),rgb(129, 150, 179));
+}
+
+.nayadabba{
+  border: 2px solid black;
+  font-size: 1rem;
+  padding: 2px 5px;
+  color: rgb(0,0,0);
+  font-weight: 700;
+  width: 100px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  outline : none;
+  text-align: center;
+}
