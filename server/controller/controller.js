@@ -27,7 +27,6 @@ function create_Register(req, res) {
 
 async function login(req, res) {
     const { email, password } = req.body;
-    console.log(email,password);
     // Retrieve all the documents in the Registration collection
     const registrations = await Registration.find();
   
