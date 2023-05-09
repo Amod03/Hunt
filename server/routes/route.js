@@ -11,7 +11,6 @@ const routes = express.Router();
 routes.route("/api/register")
   .post(create_Register)
   .options((req, res) => {
-    res.setHeader("https://treasurequest1.netlify.app", "*");
     res.setHeader(
       "Access-Control-Allow-Methods",
       "GET, POST, PATCH, PUT, DELETE, OPTIONS"
@@ -25,19 +24,16 @@ routes.route("/api/register")
 
 routes.route("/api/login")
   .post((req, res) => {
-    res.setHeader("https://treasurequest1.netlify.app", "*");
     login(req, res);
   });
 
 routes.route("/api/update/:id")
   .put((req, res) => {
-    res.setHeader("https://treasurequest1.netlify.app", "*");
     update(req, res);
   });
 
 routes.route("/api/fetchData")
   .get((req, res) => {
-    res.setHeader("https://treasurequest1.netlify.app", "*");
     fetchData(req, res);
   });
 

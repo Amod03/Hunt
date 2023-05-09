@@ -10,10 +10,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Enable CORS with credentials
-app.use(cors({
-  origin: "https://treasurequest1.netlify.app",
-  credentials: true
-}));
+app.use(cors());
 
 //mongodb connection
 const con = connectDB();
