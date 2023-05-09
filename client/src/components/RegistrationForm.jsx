@@ -98,7 +98,7 @@ function RegistrationForm() {
          
           try {
             const response = await axios.post(
-              'http://localhost:8080/api/register',
+              'https://treasure-quest-m0l9.onrender.com/api/register',
               formData
             );
             setIsRegistered(true);

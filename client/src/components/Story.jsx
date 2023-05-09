@@ -63,7 +63,7 @@ function Story() {
 
     try {
       console.log(userId)
-        const response = await axios.put(`http://localhost:8080/api/update/${newID}`, {
+        const response = await axios.put(`https://treasure-quest-m0l9.onrender.com/api/update/${newID}`, {
           score: newScore,
           time: time,
           timePerQuestion:timePerQuestion,

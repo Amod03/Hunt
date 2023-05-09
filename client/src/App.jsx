@@ -48,7 +48,7 @@ return (
             <Route path="/" element={<Hero showLogin={showLogin} />} />
             <Route path={`/:${userId}/quiz`} element={<Quiz />} />
             <Route path={`/:${userId}/story`} element={<Story />} />
-            <Route path={`${id}/admin`} element={<Admin />} />
+            <Route path={`/:${id}/admin`} element={<Admin />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
           </Routes>
         </div>
@@ -56,6 +56,6 @@ return (
     </Router>
   </UserContext.Provider>
 );
- }
+}
 
 export default App;

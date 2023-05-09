@@ -10,7 +10,7 @@ function Leaderboard() {
   const { userId } = useContext(UserContext);
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await axios.get('http://localhost:8080/api/fetchData');
+      const response = await axios.get('https://treasure-quest-m0l9.onrender.com/api/fetchData');
       const sortedUsers = response.data.sort((a, b) => b.score - a.score);
       setUsers(sortedUsers);
     };
