@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 // Enable CORS with credentials
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://treasurequest1.netlify.app",
   credentials: true
 }));
 

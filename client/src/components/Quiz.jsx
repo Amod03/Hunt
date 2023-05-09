@@ -165,7 +165,7 @@ function Quiz() {
     });
   } else {
     try {
-      const response = await axios.put(`https://treasure-quest-m0l9.onrender.com/api/update/${newID}`, {
+      const response = await axios.put(`https://treasure-quest2.onrender.com/api/update/${newID}`, {
         score: score,
         time: timeTaken,
         timePerQuestion: timeTakenPerQuestionArray,

@@ -29,7 +29,7 @@ const handleSubmit = async () => {
   return ;
   }
   try {
-    const response = await axios.post('https://treasure-quest-m0l9.onrender.com/api/login', {
+    const response = await axios.post('https://treasure-quest2.onrender.com/api/login', {
       email: email,
       password: password,
     });
