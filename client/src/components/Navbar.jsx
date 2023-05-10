@@ -29,7 +29,7 @@ function Navbar({ onLoginClick, value }) {
       setShowAdminLogin(false);
       setIsAdminLoggedIn(true); // set isAdminLoggedIn to true
       setShowAdminPanel(false);
-      window.location.href = `${id}/admin`;
+      navigate(`${id}/admin`);
     } else {
       setErrorMessage("Incorrect password. Please try again.");
     }
